@@ -9,3 +9,12 @@
     </div>
   </div>
 </template>
+
+<script>
+export default {
+  name: "NotFoundError",
+  components: {},
+};
+</script>
+
+<style scoped></style>
