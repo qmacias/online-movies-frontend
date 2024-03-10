@@ -1,10 +1,11 @@
 <template>
   <Header />
+  <router-view />
 </template>
 
 <script>
-import { watchEffect } from 'vue';
-import { useRoute } from 'vue-router';
+import { watchEffect } from "vue";
+import { useRoute } from "vue-router";
 
 import Header from "@/components/Header.vue";
 
