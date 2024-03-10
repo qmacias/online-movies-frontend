@@ -19,7 +19,7 @@ const routes = [
     path: '/:pathMatch(.*)',
     component: NotFoundError,
     meta: {
-      hideNavbar: true
+      hideHeader: true
     }
   }
 ]
