@@ -15,14 +15,22 @@
   <nav
     class="nav col-12 col-lg-auto me-lg-auto mb-2 mb-md-2 justify-content-center mb-lg-0 text-small"
   >
-    <router-link :to="homeRoute" class="nav-link" :class="isActiveLink(homeRoute)">
+    <router-link
+      :to="homeRoute"
+      class="nav-link"
+      :class="isActiveLink(homeRoute)"
+    >
       <svg class="bi d-block mx-auto mb-1" width="24" height="24">
         <use xlink:href="#home-door" />
       </svg>
       Home
     </router-link>
 
-    <router-link :to="aboutRoute" class="nav-link" :class="isActiveLink(aboutRoute)">
+    <router-link
+      :to="aboutRoute"
+      class="nav-link"
+      :class="isActiveLink(aboutRoute)"
+    >
       <svg class="bi d-block mx-auto mb-1" width="24" height="24">
         <use xlink:href="#grid" />
       </svg>
@@ -36,14 +44,14 @@ export default {
   data() {
     return {
       homeRoute: "/",
-      aboutRoute: "/about"
+      aboutRoute: "/about",
     };
   },
   methods: {
     isActiveLink(route) {
       return this.$route.path === route ? "text-white" : "text-secondary";
-    }
-  }
+    },
+  },
 };
 </script>
 

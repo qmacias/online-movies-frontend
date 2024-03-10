@@ -12,8 +12,21 @@ import Header from "@/components/Header.vue";
 export default {
   name: "App",
   components: {
-    Header
+    Header,
   },
+  // watch: {
+  //   $route(to) {
+  //     this.updatePageTitle(to);
+  //   },
+  // },
+  // methods: {
+  //   updatePageTitle(route) {
+  //     document.title = route.meta.title || "Default Page";
+  //   },
+  // },
+  // created() {
+  //   this.updatePageTitle(this.$route);
+  // },
   setup() {
     // Using Composition API
     const route = useRoute();
@@ -21,9 +34,8 @@ export default {
     watchEffect(() => {
       document.title = route.meta.title || "Default Page";
     });
-  }
+  },
 };
 </script>
 
-<style>
-</style>
+<style></style>

@@ -7,9 +7,8 @@
 <script>
 export default {
   name: "AboutView",
-  components: {}
+  components: {},
 };
 </script>
 
-<style scoped>
-</style>
+<style scoped></style>

@@ -1,39 +1,39 @@
-import { createRouter, createWebHistory } from 'vue-router'
+import { createRouter, createWebHistory } from "vue-router";
 
-import HomeView from '@/views/HomeView.vue'
-import AboutView from '@/views/AboutView.vue'
+import HomeView from "@/views/HomeView.vue";
+import AboutView from "@/views/AboutView.vue";
 
-import NotFoundError from '@/components/NotFoundError.vue'
+import NotFoundError from "@/components/NotFoundError.vue";
 
 const routes = [
   {
-    path: '/',
+    path: "/",
     component: HomeView,
     meta: {
-      title: 'Home Page'
-    }
+      title: "Home Page",
+    },
   },
   {
-    path: '/about',
-    name: 'about',
+    path: "/about",
+    name: "about",
     component: AboutView,
     meta: {
-      title: 'About Page'
-    }
+      title: "About Page",
+    },
   },
   {
-    path: '/:pathMatch(.*)',
+    path: "/:pathMatch(.*)",
     component: NotFoundError,
     meta: {
       hideHeader: true,
-      title: '404 Page'
-    }
-  }
-]
+      title: "404 Page",
+    },
+  },
+];
 
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
-  routes
-})
+  routes,
+});
 
-export default router
+export default router;
