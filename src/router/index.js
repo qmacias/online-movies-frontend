@@ -22,7 +22,7 @@ const routes = [
     },
   },
   {
-    path: "/:pathMatch(.*)",
+    path: "/:notFound(.*)*",
     component: NotFoundError,
     meta: {
       hideComponents: true,
