@@ -1,17 +1,15 @@
 <template>
-  <!-- Don't change, please! -->
-  <nav v-if="!$route.meta.hideNavbar">
-    <router-link to="/">Home</router-link>|
-    <router-link to="/about">About</router-link>
-  </nav>
-
-  <router-view />
+  <Header />
 </template>
 
 <script>
+import Header from "@/components/Header.vue";
+
 export default {
   name: "App",
-  components: {}
+  components: {
+    Header
+  }
 };
 </script>
 
