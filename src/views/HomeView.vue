@@ -1,13 +1,15 @@
 <template>
-  <div class="container">
-    <h1>This is the Home page</h1>
-  </div>
+  <Main />
 </template>
 
 <script>
+import Main from "@/components/Main.vue";
+
 export default {
   name: "HomeView",
-  components: {},
+  components: {
+    Main,
+  },
 };
 </script>
 

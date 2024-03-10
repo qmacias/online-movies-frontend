@@ -19,7 +19,7 @@ export default {
 
 <style scoped>
 footer {
-  padding: 2.5rem 0;
+  padding: 0 0 2.5rem 0;
   text-align: center;
 }
 footer p:last-child {
