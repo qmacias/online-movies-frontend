@@ -15,6 +15,7 @@ export default {
     Header
   },
   setup() {
+    // Using Composition API
     const route = useRoute();
 
     watchEffect(() => {

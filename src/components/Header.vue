@@ -1,5 +1,5 @@
 <template>
-  <header v-if="!$route.meta.hideHeader">
+  <header v-if="shouldShowHeader()">
     <div class="px-3 py-2 text-bg-dark">
       <div class="container">
         <div
@@ -22,12 +22,24 @@
 </template>
 
 <script>
+import { useRoute } from 'vue-router';
+
 import NavigationBar from "@/components/NavigationBar.vue";
 
 export default {
   name: "Header",
   components: {
     NavigationBar
+  },
+  setup() {
+    // Using Composition API
+    const route = useRoute();
+
+    const shouldShowHeader = () => {
+      return !route.meta.hideHeader;
+    };
+
+    return { shouldShowHeader };
   }
 };
 </script>
