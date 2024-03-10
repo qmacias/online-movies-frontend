@@ -1,5 +1,5 @@
 <template>
-  <header v-if="shouldShowHeader">
+  <header v-if="showComponent">
     <div class="px-3 py-2 text-bg-dark">
       <div class="container">
         <div
@@ -37,11 +37,8 @@ export default {
   components: {
     NavigationBar,
   },
-  computed: {
-    // Using Option API
-    shouldShowHeader() {
-      return !this.$route.meta.hideHeader;
-    },
+  props: {
+    showComponent: Boolean,
   },
 };
 </script>

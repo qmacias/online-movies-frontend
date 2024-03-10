@@ -25,7 +25,7 @@ const routes = [
     path: "/:pathMatch(.*)",
     component: NotFoundError,
     meta: {
-      hideHeader: true,
+      hideComponents: true,
       title: "404 Page",
     },
   },
