@@ -8,18 +8,25 @@ import NotFoundError from '@/components/NotFoundError.vue'
 const routes = [
   {
     path: '/',
-    component: HomeView
+    component: HomeView,
+    meta: {
+      title: 'Home Page'
+    }
   },
   {
     path: '/about',
     name: 'about',
-    component: AboutView
+    component: AboutView,
+    meta: {
+      title: 'About Page'
+    }
   },
   {
     path: '/:pathMatch(.*)',
     component: NotFoundError,
     meta: {
-      hideHeader: true
+      hideHeader: true,
+      title: '404 Page'
     }
   }
 ]
