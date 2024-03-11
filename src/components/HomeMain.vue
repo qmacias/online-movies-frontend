@@ -72,7 +72,7 @@
 
 <script>
 export default {
-  name: "Main",
+  name: "HomeMain",
   components: {},
 };
 </script>

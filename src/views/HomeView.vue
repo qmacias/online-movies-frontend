@@ -1,14 +1,16 @@
 <template>
-  <Main />
+  <div class="home">
+    <HomeMain />
+  </div>
 </template>
 
 <script>
-import Main from "@/components/Main.vue";
+import HomeMain from "@/components/HomeMain.vue";
 
 export default {
   name: "HomeView",
   components: {
-    Main,
+    HomeMain,
   },
 };
 </script>

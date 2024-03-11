@@ -8,6 +8,7 @@ import NotFoundError from "@/components/NotFoundError.vue";
 const routes = [
   {
     path: "/",
+    name: "home",
     component: HomeView,
     meta: {
       title: "Home Page",
