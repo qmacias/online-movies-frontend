@@ -9,28 +9,6 @@
               class="carousel slide carousel-fade slider"
               data-bs-ride="carousel"
             >
-              <div class="carousel-indicators">
-                <button
-                  type="button"
-                  data-bs-target="#carouselExampleCaptions"
-                  data-bs-slide-to="0"
-                  class="active"
-                  aria-current="true"
-                  aria-label="Slide 1"
-                ></button>
-                <button
-                  type="button"
-                  data-bs-target="#carouselExampleCaptions"
-                  data-bs-slide-to="1"
-                  aria-label="Slide 2"
-                ></button>
-                <button
-                  type="button"
-                  data-bs-target="#carouselExampleCaptions"
-                  data-bs-slide-to="2"
-                  aria-label="Slide 3"
-                ></button>
-              </div>
               <ul class="carousel-inner slides">
                 <li class="carousel-item active">
                   <a href="#">
@@ -41,11 +19,8 @@
                     />
                   </a>
                   <div class="carousel-caption d-none d-md-block">
-                    <h5>First slide label</h5>
-                    <p>
-                      Some representative placeholder content for the first
-                      slide.
-                    </p>
+                    <h5>John Wick 4</h5>
+                    <p>2023 ‧ Acción/Suspenso ‧ 2h 49m</p>
                   </div>
                 </li>
                 <li class="carousel-item">
@@ -57,27 +32,21 @@
                     />
                   </a>
                   <div class="carousel-caption d-none d-md-block">
-                    <h5>Second slide label</h5>
-                    <p>
-                      Some representative placeholder content for the second
-                      slide.
-                    </p>
+                    <h5>Rebel Moon</h5>
+                    <p>2023 ‧ Ciencia ficción/Acción ‧ 2h 14m</p>
                   </div>
                 </li>
                 <li class="carousel-item">
                   <a href="#">
                     <img
-                      src="../assets/img/slide-we_were_soldiers.jpg"
+                      src="../assets/img/slide-nefarious.jpg"
                       class="d-block w-100"
                       alt="Slide 3"
                     />
                   </a>
                   <div class="carousel-caption d-none d-md-block">
-                    <h5>Third slide label</h5>
-                    <p>
-                      Some representative placeholder content for the third
-                      slide.
-                    </p>
+                    <h5>Nefarious</h5>
+                    <p>2023 ‧ Terror/Misterio ‧ 1h 38m</p>
                   </div>
                 </li>
               </ul>
@@ -308,6 +277,19 @@ a {
 
 .slider .flex-direction-nav .flex-next {
   right: 30px;
+}
+
+.carousel-caption {
+  background-color: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(3px);
+  padding: 15px;
+  border-radius: 10px;
+  color: #ffffff;
+}
+
+.carousel-caption h5,
+.carousel-caption p {
+  margin: 0;
 }
 
 .latest-movie {
