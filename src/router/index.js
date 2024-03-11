@@ -3,6 +3,8 @@ import { createRouter, createWebHistory } from "vue-router";
 import HomeView from "@/views/HomeView.vue";
 import AboutView from "@/views/AboutView.vue";
 
+import NotFoundError from "@/components/NotFoundError.vue";
+
 const routes = [
   {
     path: "/",
@@ -21,7 +23,7 @@ const routes = [
   },
   {
     path: "/:pathMatch(.*)*",
-    component: () => import('@/components/NotFoundError.vue'),
+    component: NotFoundError,
     meta: {
       hideComponents: true,
       title: "404 Page",
