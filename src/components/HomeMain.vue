@@ -4,14 +4,65 @@
       <div class="page">
         <div class="row">
           <div class="col-sm-12 col-md-9 col-lg-9">
-            <div class="slider">
-              <ul class="slides">
-                <li>
+            <div
+              id="carouselExampleAutoplaying"
+              class="carousel slide slider"
+              data-bs-ride="carousel"
+            >
+              <ul class="carousel-inner slides">
+                <li class="carousel-item active">
                   <a href="#">
-                    <img src="../assets/img/slide-1.jpg" alt="Slide 1" />
+                    <img
+                      src="../assets/img/slide-1.jpg"
+                      class="d-block w-100"
+                      alt="Slide 1"
+                    />
+                  </a>
+                </li>
+                <li class="carousel-item">
+                  <a href="#">
+                    <img
+                      src="../assets/img/slide-2.jpg"
+                      class="d-block w-100"
+                      alt="Slide 2"
+                    />
+                  </a>
+                </li>
+                <li class="carousel-item">
+                  <a href="#">
+                    <img
+                      src="../assets/img/slide-3.jpg"
+                      class="d-block w-100"
+                      alt="Slide 3"
+                    />
                   </a>
                 </li>
               </ul>
+
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
             </div>
           </div>
 
@@ -116,6 +167,40 @@ a {
   padding: 30px;
 }
 
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  zoom: 1;
+}
+
+.container:after {
+  content: " ";
+  clear: both;
+  display: block;
+  overflow: hidden;
+  height: 0;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
 .slider {
   position: relative;
   margin-bottom: 30px;
@@ -195,64 +280,6 @@ a {
   height: auto;
 }
 
-@media all and (-webkit-min-device-pixel-ratio: 1.5),
-  all and (-o-min-device-pixel-ratio: 3 / 2),
-  all and (min--moz-device-pixel-ratio: 1.5),
-  all and (min-device-pixel-ratio: 1.5) {
-}
-
-@media all and (-webkit-min-device-pixel-ratio: 1.5),
-  all and (-o-min-device-pixel-ratio: 3 / 2),
-  all and (min--moz-device-pixel-ratio: 1.5),
-  all and (min-device-pixel-ratio: 1.5) {
-}
-
-@media all and (-webkit-min-device-pixel-ratio: 1.5),
-  all and (-o-min-device-pixel-ratio: 3 / 2),
-  all and (min--moz-device-pixel-ratio: 1.5),
-  all and (min-device-pixel-ratio: 1.5) {
-}
-
-@media all and (-webkit-min-device-pixel-ratio: 1.5),
-  all and (-o-min-device-pixel-ratio: 3 / 2),
-  all and (min--moz-device-pixel-ratio: 1.5),
-  all and (min-device-pixel-ratio: 1.5) {
-}
-
-.container {
-  margin-right: auto;
-  margin-left: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-  zoom: 1;
-}
-
-.container:after {
-  content: " ";
-  clear: both;
-  display: block;
-  overflow: hidden;
-  height: 0;
-}
-
-@media (min-width: 768px) {
-  .container {
-    width: 750px;
-  }
-}
-
-@media (min-width: 992px) {
-  .container {
-    width: 970px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .container {
-    width: 1170px;
-  }
-}
-
 .page img {
   max-width: 100%;
 }
@@ -262,12 +289,37 @@ a {
   margin-right: -15px;
   zoom: 1;
 }
+
 .row:after {
   content: " ";
   clear: both;
   display: block;
   overflow: hidden;
   height: 0;
+}
+
+@media all and (-webkit-min-device-pixel-ratio: 1.5),
+  all and (-o-min-device-pixel-ratio: 3 / 2),
+  all and (min--moz-device-pixel-ratio: 1.5),
+  all and (min-device-pixel-ratio: 1.5) {
+}
+
+@media all and (-webkit-min-device-pixel-ratio: 1.5),
+  all and (-o-min-device-pixel-ratio: 3 / 2),
+  all and (min--moz-device-pixel-ratio: 1.5),
+  all and (min-device-pixel-ratio: 1.5) {
+}
+
+@media all and (-webkit-min-device-pixel-ratio: 1.5),
+  all and (-o-min-device-pixel-ratio: 3 / 2),
+  all and (min--moz-device-pixel-ratio: 1.5),
+  all and (min-device-pixel-ratio: 1.5) {
+}
+
+@media all and (-webkit-min-device-pixel-ratio: 1.5),
+  all and (-o-min-device-pixel-ratio: 3 / 2),
+  all and (min--moz-device-pixel-ratio: 1.5),
+  all and (min-device-pixel-ratio: 1.5) {
 }
 
 .col-xs-1,
