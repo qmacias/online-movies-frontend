@@ -6,7 +6,7 @@
           <div class="col-sm-12 col-md-9 col-lg-9">
             <div
               id="carouselExampleAutoplaying"
-              class="carousel slide slider"
+              class="carousel slide carousel-fade slider"
               data-bs-ride="carousel"
             >
               <div class="carousel-indicators">
@@ -35,7 +35,7 @@
                 <li class="carousel-item active">
                   <a href="#">
                     <img
-                      src="../assets/img/slide-1.jpg"
+                      src="../assets/img/slide-john_wick.jpg"
                       class="d-block w-100"
                       alt="Slide 1"
                     />
@@ -51,7 +51,7 @@
                 <li class="carousel-item">
                   <a href="#">
                     <img
-                      src="../assets/img/slide-2.jpg"
+                      src="../assets/img/slide-rebel_moon.jpg"
                       class="d-block w-100"
                       alt="Slide 2"
                     />
@@ -67,7 +67,7 @@
                 <li class="carousel-item">
                   <a href="#">
                     <img
-                      src="../assets/img/slide-3.jpg"
+                      src="../assets/img/slide-we_were_soldiers.jpg"
                       class="d-block w-100"
                       alt="Slide 3"
                     />
@@ -271,6 +271,7 @@ a {
   width: 100%;
   height: auto;
   display: block;
+  filter: brightness(90%);
 }
 
 .slider .flex-direction-nav {
