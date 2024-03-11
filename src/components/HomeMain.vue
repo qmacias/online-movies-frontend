@@ -7,9 +7,9 @@
             <div class="slider">
               <ul class="slides">
                 <li>
-                  <a href="#"
-                    ><img src="../assets/img/slide-1.jpg" alt="Slide 1"
-                  /></a>
+                  <a href="#">
+                    <img src="../assets/img/slide-1.jpg" alt="Slide 1" />
+                  </a>
                 </li>
               </ul>
             </div>
@@ -19,16 +19,16 @@
             <div class="row">
               <div class="col-sm-6 col-md-12">
                 <div class="latest-movie">
-                  <a href="#"
-                    ><img src="../assets/img/thumb-1.jpg" alt="Movie 1"
-                  /></a>
+                  <a href="#">
+                    <img src="../assets/img/movie-1.jpg" alt="Movie 1" />
+                  </a>
                 </div>
               </div>
               <div class="col-sm-6 col-md-12">
                 <div class="latest-movie">
-                  <a href="#"
-                    ><img src="../assets/img/thumb-2.jpg" alt="Movie 2"
-                  /></a>
+                  <a href="#">
+                    <img src="../assets/img/movie-2.jpg" alt="Movie 2" />
+                  </a>
                 </div>
               </div>
             </div>
@@ -38,30 +38,30 @@
         <div class="row">
           <div class="col-sm-6 col-md-3">
             <div class="latest-movie">
-              <a href="#"
-                ><img src="../assets/img/thumb-3.jpg" alt="Movie 3"
-              /></a>
+              <a href="#">
+                <img src="../assets/img/movie-3.jpg" alt="Movie 3" />
+              </a>
             </div>
           </div>
           <div class="col-sm-6 col-md-3">
             <div class="latest-movie">
-              <a href="#"
-                ><img src="../assets/img/thumb-4.jpg" alt="Movie 4"
-              /></a>
+              <a href="#">
+                <img src="../assets/img/movie-4.jpg" alt="Movie 4" />
+              </a>
             </div>
           </div>
           <div class="col-sm-6 col-md-3">
             <div class="latest-movie">
-              <a href="#"
-                ><img src="../assets/img/thumb-5.jpg" alt="Movie 5"
-              /></a>
+              <a href="#">
+                <img src="../assets/img/movie-5.jpg" alt="Movie 5" />
+              </a>
             </div>
           </div>
           <div class="col-sm-6 col-md-3">
             <div class="latest-movie">
-              <a href="#"
-                ><img src="../assets/img/thumb-6.jpg" alt="Movie 6"
-              /></a>
+              <a href="#">
+                <img src="../assets/img/movie-6.jpg" alt="Movie 6" />
+              </a>
             </div>
           </div>
         </div>
@@ -108,6 +108,12 @@ ul {
 a {
   text-decoration: none;
   color: #ffaa3c;
+}
+
+.main-content .container {
+  background: white;
+  border-radius: 5px;
+  padding: 30px;
 }
 
 .slider {
@@ -245,6 +251,10 @@ a {
   .container {
     width: 1170px;
   }
+}
+
+.page img {
+  max-width: 100%;
 }
 
 .row {
@@ -1435,15 +1445,5 @@ a {
   .hidden-print {
     display: none !important;
   }
-}
-
-.main-content .container {
-  background: white;
-  border-radius: 5px;
-  padding: 30px;
-}
-
-.page img {
-  max-width: 100%;
 }
 </style>
